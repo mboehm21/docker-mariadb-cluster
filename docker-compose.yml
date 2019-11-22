@@ -4,7 +4,7 @@ services:
   db-1:
     container_name: db-1
     hostname: db-1
-    image: mariadb
+    image: mariadb:latest
     restart: unless-stopped
     environment:
       MYSQL_ROOT_PASSWORD: root
@@ -19,7 +19,7 @@ services:
   db-2:
     container_name: db-2
     hostname: db-2
-    image: mariadb
+    image: mariadb:latest
     restart: unless-stopped
     environment:
       MYSQL_ROOT_PASSWORD: root
